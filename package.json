@@ -1,6 +1,6 @@
 {
   "name": "@yyfather/dsh-billing-dock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Floating billing dock for DSH: today cost, peak/off-peak rate and countdown, host light/dark aware. Standalone usage parser.",
   "type": "module",
   "main": "./index.js",

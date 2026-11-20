@@ -13,6 +13,7 @@
     "index.js",
     "usage.js",
     "client.js",
+    "dock.css",
     "cordis.patch.yml",
     "README.md",
     "LICENSE"
@@ -37,6 +38,10 @@
   ],
   "license": "MIT",
   "author": "YYfather",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YYfather/dsh-billing-dock.git"
+  },
   "engines": {
     "node": ">=20"
   },

@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-billing-dock
+      name: '@yyfather/dsh-billing-dock'

@@ -26,3 +26,26 @@
 .bd-dock[data-theme=light] .bd-tag{background:rgba(10,63,143,.12);color:#0a3f8f}
 .bd-dock[data-theme=light][data-tone=peak] .bd-tag{background:rgba(163,74,0,.16);color:#8a3f00}
 .bd-dock[data-theme=light] .bd-note{color:#3b4a5f;opacity:1;border-top-color:rgba(15,35,70,.16)}
+/* —— 收起/展开（点击标题栏切换，状态存 localStorage） —— */
+.bd-head{display:flex;align-items:center;gap:6px;margin:-1px -2px 5px;padding:1px 2px;pointer-events:auto;cursor:pointer;user-select:none;border-radius:5px;-webkit-user-select:none}
+.bd-head:hover,.bd-head:focus-visible{opacity:1;outline:none}
+.bd-title{margin-right:auto;white-space:nowrap}
+.bd-fold-val{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap;opacity:.95}
+.bd-caret{width:9px;flex:none;text-align:center;font-size:10px;line-height:1;opacity:.5}
+.bd-dock[data-folded="1"]{width:auto;max-width:calc(100vw - 24px);padding:7px 10px}
+.bd-dock[data-folded="1"] .bd-head{margin-bottom:0}
+.bd-dock[data-folded="1"] .bd-row,.bd-dock[data-folded="1"] .bd-note{display:none}
+.bd-toggle{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;margin:-4px -5px -4px 2px;border:0;padding:0;background:transparent;color:inherit;font:inherit;border-radius:6px;opacity:.6;pointer-events:auto;cursor:pointer;transition:background .18s ease,opacity .18s ease}
+.bd-toggle:hover,.bd-toggle:focus-visible{opacity:1;background:rgba(128,128,128,.2);outline:none}
+.bd-dock{z-index:9990}
+.bd-dock[data-folded="1"]{pointer-events:auto;cursor:pointer}
+/* —— 三档：full / mini / edge —— */
+.bd-dock[data-mode="mini"]{width:auto;max-width:calc(100vw - 24px);padding:7px 10px;pointer-events:auto;cursor:pointer}
+.bd-dock[data-mode="mini"] .bd-head{margin-bottom:0}
+.bd-dock[data-mode="mini"] .bd-row,.bd-dock[data-mode="mini"] .bd-note{display:none}
+.bd-dock[data-mode="full"] .bd-edge,.bd-dock[data-mode="mini"] .bd-edge{display:none}
+.bd-dock[data-mode="edge"]{left:0;width:26px;min-height:66px;padding:9px 0;border-radius:0 8px 8px 0;pointer-events:auto;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.bd-dock[data-mode="edge"] .bd-head,.bd-dock[data-mode="edge"] .bd-row,.bd-dock[data-mode="edge"] .bd-note{display:none}
+.bd-edge{writing-mode:vertical-rl;text-orientation:mixed;display:inline-flex;align-items:center;gap:5px;font-size:11px;letter-spacing:.06em}
+.bd-edge-mark{font-weight:700;opacity:.85}
+.bd-edge-val{font-variant-numeric:tabular-nums;opacity:.72}

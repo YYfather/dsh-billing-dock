@@ -1,5 +1,5 @@
 {
-  "name": "@yyfather/dsh-billing-dock",
+  "name": "@maimu/dsh-billing-dock",
   "version": "1.0.2",
   "description": "Floating billing dock for DSH: today cost, peak/off-peak rate and countdown, host light/dark aware. Standalone usage parser.",
   "type": "module",
@@ -37,10 +37,10 @@
     "fairy"
   ],
   "license": "MIT",
-  "author": "YYfather",
+  "author": "MaiMu",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YYfather/dsh-billing-dock.git"
+    "url": "git+https://github.com/MaiMu/dsh-billing-dock.git"
   },
   "engines": {
     "node": ">=20"

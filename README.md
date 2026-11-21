@@ -21,8 +21,8 @@ DSH 侧栏左下角的常驻电费浮层：**今日电费 / 电费余额 / 当�
 `link:` 本地目录或 npm 包，两种方式都需要把包名加进 profile 的 `dsh.profile.bundles`：
 
 ```json
-"dependencies": { "@yyfather/dsh-billing-dock": "link:E:/path/to/billing-dock" },
-"dsh": { "profile": { "bundles": ["...", "@yyfather/dsh-billing-dock"] } }
+"dependencies": { "@maimu/dsh-billing-dock": "link:E:/path/to/billing-dock" },
+"dsh": { "profile": { "bundles": ["...", "@maimu/dsh-billing-dock"] } }
 ```
 
 宿主侧改动需重启 DSH；客户端改动刷新页面即可。

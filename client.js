@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: '@yyfather/dsh-billing-dock',
+  id: '@maimu/dsh-billing-dock',
   factory(require) {
     const React = require('react')
     const h = React.createElement
